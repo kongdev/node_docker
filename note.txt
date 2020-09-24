@@ -1,0 +1,19 @@
+docker build . -t app1:1.0
+docker run -p 1000:1111 app1:1.0 -d --name app1
+docker build . -t app2:1.0
+docker run -p 2000:2222 app2:1.0 -d --name app2
+
+
+docker start app1 
+docker stop app1
+
+docker save -o ./images/app1.tar app1
+docker save -o ./images/app2.tar app2
+
+
+docker load -i ./images/app1.tar 
+docker load -i ./images/app2.tar 
+
+
+docker exec -it <name> bash
+docker exec -it <name> sh
