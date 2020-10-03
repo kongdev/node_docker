@@ -13,5 +13,4 @@ RUN npm install pm2 -g
 RUN npm install --production
 COPY ./ ./ 
 #หลังจาก install แล้วก็จะทำการ เริ่มโปรแกรม
-# CMD ["npm","start"]
 CMD [ "pm2-runtime", "start", "pm2.json" ]
