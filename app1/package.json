@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts" :{
     "start" : "node index",
-    "start_pm2": "pm2 start ecosystem.config.js --only app1"
+    "start_pm2": "pm2 start pm2.json --only app1"
   },
   "license": "MIT",
   "dependencies": {
