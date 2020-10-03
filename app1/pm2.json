@@ -5,14 +5,6 @@
   "merge_logs": true,
   "instances": 6,
   "autorestart": true,
-  "watch": false,
-  "env": {
-    "NODE_ENV": "development"
-  },
-  "env_staging": {
-    "NODE_ENV": "staging"
-  },
-  "env_production": {
-    "NODE_ENV": "production"
-  }
+  "max_memory_restart": "100M",
+  "watch": false
 }
