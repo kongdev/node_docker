@@ -2,13 +2,15 @@
   "name": "app1",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts" :{
-    "start" : "node index",
+  "scripts": {
+    "start": "node index",
     "start_pm2": "pm2 start pm2.json --only app1"
   },
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",  
+    "axios": "^1.7.8",
+    "express": "^4.17.1",
+    "express-correlation-id": "^3.0.1",
     "morgan": "^1.10.0",
     "pm2": "^4.5.0"
   }
